@@ -1,0 +1,16 @@
+<div class="container">
+    <label>
+        <input type="radio" value="" name="boolean_filter" [(ngModel)]="rawValue"
+            (ngModelChange)="onChange($event)" />
+        wszystkie</label>
+    <br />
+    <label>
+        <input type="radio" value="true" name="boolean_filter" [(ngModel)]="rawValue"
+            (ngModelChange)="onChange($event)" />
+        tak</label>
+    <br />
+    <label>
+        <input type="radio" value="false" name="boolean_filter" [(ngModel)]="rawValue"
+            (ngModelChange)="onChange($event)" />
+        nie</label>
+</div>
