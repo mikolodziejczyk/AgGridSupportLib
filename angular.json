@@ -15,7 +15,12 @@
             "tsConfig": "projects/ag-grid-support-lib/tsconfig.lib.json",
             "project": "projects/ag-grid-support-lib/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/ag-grid-support-lib/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
